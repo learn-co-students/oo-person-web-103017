@@ -1,11 +1,11 @@
-# your code goes 
+# your code goes
 require 'pry'
 class Person
 	def initialize(name)
 		@name = name
 		@bank_account = 25
 		@happiness = 8
-		@hygiene = 8 
+		@hygiene = 8
 	end
 	attr_reader :name, :bank_account, :happiness, :hygiene
 
@@ -14,7 +14,7 @@ class Person
 	end
 
 	def happiness=(happiness)
-		
+
 		if happiness > 10
 			@happiness = 10
 		elsif happiness < 0
@@ -25,7 +25,7 @@ class Person
 	end
 
 	def hygiene=(hygiene)
-		
+
 		if hygiene > 10
 			@hygiene = 10
 		elsif hygiene < 0
@@ -81,7 +81,7 @@ class Person
 	end
 
 	def start_conversation(person, topic)
-		case topic 
+		case topic
 		when 'politics'
 		#binding.pry
 			self.happiness -= 2
@@ -96,7 +96,7 @@ class Person
 
 		end
 
-		
+
 	end
 
 
