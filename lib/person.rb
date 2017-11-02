@@ -72,6 +72,8 @@ class Person
 
   end
 
+  private
+  
   def hygiene_limits
     if @hygiene < 0
       @hygiene = 0
@@ -91,7 +93,5 @@ class Person
       @happiness
     end
   end
-
-
 
 end
