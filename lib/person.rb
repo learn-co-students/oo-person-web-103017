@@ -21,15 +21,15 @@ class Person
   end
 
   def clean?
-    @hygiene > 7
+    self.hygiene > 7
   end
 
   def happy?
-    @happiness > 7
+    self.happiness > 7
   end
 
   def get_paid(salary)
-    @bank_account += salary
+    self.bank_account += salary
     "all about the benjamins"
   end
 
@@ -37,14 +37,14 @@ class Person
     # May need to compare a local variable instead of the instance variable
     self.hygiene += 4
 
-    return "♪ Rub-a-dub just relaxing in the tub ♫"
+    "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
   def work_out
     self.happiness += 2
     self.hygiene -= 3
 
-    return "♪ another one bites the dust ♫"
+    "♪ another one bites the dust ♫"
   end
 
   #friend represents another instance of the person class
@@ -73,24 +73,24 @@ class Person
   end
 
   private
-  
+
   def hygiene_limits
-    if @hygiene < 0
-      @hygiene = 0
-    elsif @hygiene > 10
-      @hygiene = 10
+    if self.hygiene < 0
+      self.hygiene = 0
+    elsif self.hygiene > 10
+      self.hygiene = 10
     else
-      @hygiene
+      self.hygiene
     end
   end
 
   def happiness_limits
-    if @happiness < 0
-      @happiness = 0
-    elsif @happiness > 10
-      @happiness = 10
+    if self.happiness < 0
+      self.happiness = 0
+    elsif self.happiness > 10
+      self.happiness = 10
     else
-      @happiness
+      self.happiness
     end
   end
 
