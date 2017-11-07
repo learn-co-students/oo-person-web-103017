@@ -1,4 +1,5 @@
-# your code goes
+# copying this in from chris's code
+
 require 'pry'
 class Person
 	def initialize(name)
