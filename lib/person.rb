@@ -20,7 +20,6 @@ class Person
     else
       @happiness = num
     end
-
   end
 
   def hygiene=(num)
@@ -76,7 +75,7 @@ class Person
       else
         return "blah blah blah blah blah"
       end
-      
+
     end
 
 
